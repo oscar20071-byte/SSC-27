@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d18">
+  <title>SSC 27 | Soccer Simulators Champs</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #090d18;
+      color: #f5f6fa;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7%;
+      border-bottom: 1px solid #222b3d;
+      background: #0d1423;
+    }
+    .logo { font-size: 25px; font-weight: 900; color: #e9bd55; }
+    .logo span { color: white; }
+    .login {
+      background: #5865f2;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 25px;
+      text-align: center;
+    }
+    .tag {
+      color: #e9bd55;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      margin: 22px 0;
+      line-height: 1.05;
+    }
+    h1 span { color: #e9bd55; }
+    .description {
+      color: #aab3c5;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    .actions { margin-top: 35px; }
+    .primary {
+      background: #e9bd55;
+      color: #101522;
+      border: 0;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+      gap: 18px;
+      margin-top: 85px;
+      text-align: left;
+    }
+    .feature {
+      background: #111b2d;
+      border: 1px solid #26334a;
+      border-radius: 13px;
+      padding: 24px;
+    }
+    .feature h3 { color: #e9bd55; margin-bottom: 12px; }
+    .feature p { color: #aab3c5; line-height: 1.5; font-size: 14px; }
+    footer {
+      text-align: center;
+      color: #69758a;
+      padding: 30px;
+      border-top: 1px solid #222b3d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SSC <span>27</span></div>
+    <button class="login" onclick="discordLogin()">
+      Entrar con Discord
+    </button>
+  </header>
+
+  <main>
+    <div class="tag">SOCCER SIMULATORS CHAMPS</div>
+    <h1>Tu comunidad.<br><span>Tu fútbol.</span></h1>
+    <p class="description">
+      Crea clubes, administra jugadores, organiza competiciones
+      y simula partidos automáticamente. Todo en una plataforma
+      diseñada para comunidades de simulación futbolística.
+    </p>
+
+    <div class="actions">
+      <button class="primary" onclick="discordLogin()">
+        COMENZAR AHORA
+      </button>
+    </div>
+
+    <section class="features">
+      <article class="feature">
+        <h3>⚽ Clubes y jugadores</h3>
+        <p>Crea tus propios equipos y futbolistas personalizados.</p>
+      </article>
+      <article class="feature">
+        <h3>🏆 Competiciones</h3>
+        <p>Organiza ligas, copas y temporadas completas.</p>
+      </article>
+      <article class="feature">
+        <h3>📊 Estadísticas</h3>
+        <p>Consulta resultados, clasificaciones y premios.</p>
+      </article>
+      <article class="feature">
+        <h3>🌐 Comunidades</h3>
+        <p>Cada comunidad tendrá su propio espacio y sus datos separados.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    SSC 27 © 2026 — Soccer Simulators Champs
+  </footer>
+
+  <script>
+    function discordLogin() {
+      alert("El inicio de sesión con Discord estará disponible cuando configuremos el servidor de autenticación.");
+    }
+  </script>
+</body>
+</html>
