@@ -141,8 +141,26 @@
   </footer>
 
   <script>
-    function discordLogin() {
-      alert("El inicio de sesión con Discord estará disponible cuando configuremos el servidor de autenticación.");
+    const SUPABASE_URL = "https://awgdzhpsxpwieqfuciip.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable_IsAn7Q8HuAaX4vHQvYiojQ_T5TmAK3W";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
+async function discordLogin() {
+  const { error } = await supabaseClient.auth.signInWithOAuth({
+    provider: "discord",
+    options: {
+      redirectTo: window.location.origin + "/ssc-27/"
+    }
+  });
+
+  if (error) {
+    alert("Error al iniciar sesión: " + error.message);
+  }
+}
     }
   </script>
 </body>
